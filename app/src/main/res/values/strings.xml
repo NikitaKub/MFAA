@@ -11,14 +11,38 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login_button">Log In</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="btn_products">Продукти</string>
-    <string name="btn_count">Кількість</string>
-    <string name="btn_delivery">Доставка</string>
-    <string name="btn_submit">Підтвердження</string>
-    <string name="btn_next">Далі</string>
-    <string name="btn_submit_stepfinal">Підтвердження заказу</string>
-    <string name="text_home">Оберіть послугу</string>
-    <string name="text_donate">Чи бажаєте задонати 10% від суми на ЗСУ?</string>
-    <string name="btn_yes">Так</string>
-    <string name="btn_no">Ні</string>
+    <string name="btn_products">Products</string>
+    <string name="btn_count">Count</string>
+    <string name="btn_delivery">Delivery</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_submit_stepfinal">Submit order</string>
+    <string name="text_home">Choose a service</string>
+    <string name="text_donate">Do you like to donate 10% of cost to support Armed Forces of Ukraine?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="settings_change_background_color"> Change the background color </string>
+    <string name="context_menu_change_background_color"> Change the background color of text </string>
+    <string-array name="settings_list">
+        <item> Change Theme </item>
+        <item> Change Password </item>
+        <item> Exit </item>
+    </string-array>
+    <string-array name="settings_colors">
+        <item> Black </item>
+        <item> White </item>
+        <item> Pink </item>
+        <item> Orange </item>
+        <item> Yellow </item>
+        <item> Purple </item>
+        <item> Green </item>
+        <item> Blue </item>
+        <item> Brown </item>
+        <item> Gray </item>
+        <item> Cyan </item>
+        <item> Teal </item>
+        <item> Ligth Sky Blue </item>
+        <item> Lime </item>
+        <item> Orchid </item>
+    </string-array>
 </resources>

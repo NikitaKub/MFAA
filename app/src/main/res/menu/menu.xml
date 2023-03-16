@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/change_theme"
+        android:title="" />
+    <item android:id="@+id/change_password"
+        android:title="" />
+    <item android:id="@+id/change_background_color"
+        android:title="@string/settings_change_background_color">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/color1"
+                    android:title="" />
+                <item android:id="@+id/color2"
+                    android:title="" />
+                <item android:id="@+id/color3"
+                    android:title="" />
+                <item android:id="@+id/color4"
+                    android:title="" />
+                <item android:id="@+id/color5"
+                    android:title="" />
+                <item android:id="@+id/color6"
+                    android:title="" />
+                <item android:id="@+id/color7"
+                    android:title="" />
+                <item android:id="@+id/color8"
+                    android:title="" />
+                <item android:id="@+id/color9"
+                    android:title="" />
+                <item android:id="@+id/color10"
+                    android:title="" />
+                <item android:id="@+id/color11"
+                    android:title="" />
+                <item android:id="@+id/color12"
+                    android:title="" />
+                <item android:id="@+id/color13"
+                    android:title="" />
+                <item android:id="@+id/color14"
+                    android:title="" />
+                <item android:id="@+id/color15"
+                    android:title="" />
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/exit"
+        android:title="" />
+</menu>
