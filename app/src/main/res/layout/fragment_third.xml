@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="180sp"
         android:onClick="nextFragment"
+        android:measureAllChildren="true"
         android:text="@string/btn_next" />
 
     <Switch

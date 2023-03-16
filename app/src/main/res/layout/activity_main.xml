@@ -8,72 +8,83 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="0dp">
-
-        <Button
-            android:id="@+id/button_fragment4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="@string/btn_submit"
-            android:textSize="10sp" />
-
-        <Button
-            android:id="@+id/button_fragment3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="@string/btn_delivery"
-            android:textSize="10sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/frameName_textView"
-        tools:ignore="TextSizeCheck"
-        tools:layout_editor_absoluteX="20dp">
-
-        <Button
-            android:id="@+id/button_fragment1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="@string/btn_products"
-            android:textSize="10sp" />
-
-        <Button
-            android:id="@+id/button_fragment2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:layout_weight="1"
-            android:text="@string/btn_count"
-            android:textSize="10sp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/frameName_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="@string/text_home"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="5dp"
+        android:baselineAligned="true"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/frameName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:text="@string/text_home"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?attr/actionBarDivider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/button_fragment4"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_submit"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_fragment3"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_delivery"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?attr/actionBarDivider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            tools:ignore="TextSizeCheck">
+
+            <Button
+                android:id="@+id/button_fragment1"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_products"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button_fragment2"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_count"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/login_button"
@@ -88,15 +99,15 @@
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="0dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
     </FrameLayout>
 

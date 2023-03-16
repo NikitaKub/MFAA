@@ -169,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(MenuItem item)
     {
+
         String option = "context-menu";
         switch (item.getItemId())
         {
