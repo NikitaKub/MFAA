@@ -39,4 +39,55 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator"
         tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settingsWireless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:onClick="sendButton"
+        app:backgroundTint="#B71C1C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/stat_notify_sdcard_prepare"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/youtubePromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendButton"
+            android:text="@string/uri_youtube" />
+
+        <Button
+            android:id="@+id/marketPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendButton"
+            android:text="@string/uri_playstore" />
+
+        <Button
+            android:id="@+id/searchPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendButton"
+            android:text="@string/uri_search" />
+
+        <Button
+            android:id="@+id/twitterPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendButton"
+            android:text="@string/uri_twitter" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private ThirdFragment fragment3 = new ThirdFragment();
     private FourthFragment fragment4 = new FourthFragment();
     private ConstraintLayout layout;
+
+    private Integer bonuses;
     private  static final String SUBMIT_DIALOG="submit";
 
     @Override
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         button_fragment4 = findViewById(R.id.button_fragment4);
         textView = findViewById(R.id.frameName_textView);
         layout = findViewById(R.id.layout_main);
+        bonuses = (Integer)getIntent().getSerializableExtra("PROMO");
 
         registerForContextMenu(textView);
 
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 setFragment(fragment4, "submit_tag");
             }
         });
+
         Toast.makeText(this, "Please, login to your account.", Toast.LENGTH_LONG).show();
     }
 
@@ -169,7 +173,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(MenuItem item)
     {
-
         String option = "context-menu";
         switch (item.getItemId())
         {
@@ -229,16 +232,12 @@ public class MainActivity extends AppCompatActivity {
             layout.setBackgroundColor(color);
             if (item.isChecked()) item.setChecked(false);
             else item.setChecked(true);
-            return true;
         } else if (option == "context-menu") {
             textView.setBackgroundColor(color);
             if (item.isChecked()) item.setChecked(false);
             else item.setChecked(true);
-            return true;
         }
-        else {
-            return true;
-        }
+        return true;
     }
 
     public void setFragment(Fragment fragment, String tag){
